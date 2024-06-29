@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chia Sẻ IPA App Crack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: black;
+            overflow-y: auto;
+            transition: background-color 0.5s, color 0.5s;
+            position: relative;
+            background-color: white; /* Màu nền mặc định */
+        }
+
+        .navbar, .sub-navbar {
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            position: fixed; /* Đặt vị trí cố định */
+            z-index: 1000; /* Đảm bảo nó hiển thị phía trên */
+        }
+
+        .navbar {
+            top: 0; /* Đặt ở trên cùng */
+        }
+
+        .sub-navbar {
+            top: 45px; /* Đặt bên dưới thanh điều hướng chính */
+        }
+
+        .navbar a, .sub-navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover, .sub-navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            display: none;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 100px; /* Thêm khoảng trống để tránh nội dung bị che khuất bởi navbar */
+            padding: 0 20px; /* Cách lề bên trái và phải */
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+            padding-left: 20px; /* Cách lề bên trái */
+            padding-right: 20px; /* Cách lề bên phải */
+        }
+
+        ul li {
+            margin-bottom: 20px; /* Thay đổi khoảng cách giữa các mục IPA */
+            display: flex;
+            align-items: center;
+        }
+
+        ul li img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        ul li a:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.05);
+        }
+
+        .search-container {
+            margin-top: 10px;
+            width: 100%;
+            max-width: 600px;
+            padding: 0 20px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .marquee {
+            position: fixed;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            top: 0;
+            background-color: white;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .marquee span {
+            display: inline-block;
+            animation: marquee 10s linear infinite, rainbow-text 3s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        @keyframes rainbow-text {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85%, 100% { color: violet; }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: white;
+            }
+            .navbar, .sub-navbar {
+                background-color: #222;
+            }
+            .navbar a, .sub-navbar a {
+                color: white;
+            }
+            .navbar a:hover, .sub-navbar a:hover {
+                background-color: #555;
+                color: white;
+            }
+            ul li a {
+                background-color: #333;
+                color: white;
+            }
+            ul li a:hover {
+                background-color: #444;
+            }
+            .marquee {
+                background-color: #222;
+            }
+        }
+
+        .news-description p,
+        #contact p,
+        #about p {
+            margin-left: 10px; /* Dịch văn bản ra khỏi lề một ít */
+        }
+
+        .news-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        iframe {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee">
+        <span>Chào mừng đến với Trang Chia Sẻ IPA App Crack - Nơi chia sẻ các ứng dụng IPA đã được bẻ khóa và app jb!</span>
+    </div>
+    <div class="navbar">
+        <a href="#" onclick="showContent('home')">Home</a>
+        <a href="#" onclick="showContent('news')">News</a>
+        <a href="#" onclick="showContent('contact')">Contact</a>
+        <a href="#" onclick="showContent('about')">About</a>
+    </div>
+
+    <div class="sub-navbar">
+        <a href="#" onclick="showContent('app-jailbreak')">Jailbreak</a>
+        <a href="#" onclick="showContent('trollstore')">TrollStore</a>
+        <a href="#" onclick="showContent('game-hack')">Game Hack</a>
+        <a href="#" onclick="showContent('app-crack')">App Crack</a>
+    </div>
+
+    <div id="home" class="content active">
+        <h1>Home</h1>
+				 <p> Tải ảnh, câu chuyện và video xuống tất cả các mạng với chất lượng cao và không có logo <br>  
+Cách sử dụng Sao chép video clip, câu chuyện, ảnh hoặc phiên bản ngắn, sau đó dán vào bất kỳ trang web nào trong số này rồi tải xuống <br>  
+<a href="  https://fdownloader.net/en  " target="_self"> Tải ảnh, câu chuyện và video trên Facebook 📘📘👇 </a> <br>  
+
+<a href="  https://ssyoutube.com  " target="_self"> Tải ảnh, video, câu chuyện và âm thanh từ YouTube 🎬🎬👇</a> <br>  
+                <a href="  https://t.me/downloader_tiktok_bot  " target="_self"> Tải xuống video và âm thanh Tik Tok không có logo🖤🖤👇</a> <br>  
+                <a href="   https://snapinsta.app/  " target="_self"> Tải xuống ảnh, câu chuyện và video trên Instagram video không có logo 📷📷👇</a> <br>  
+ <a href=" https://t.me/kurdishpdff/2 " target="_self"> Tải xuống âm thanh Facebook Messenger 👇 </a>
+         </p>
+			 <div class="news-image">
+                <img src= https://i.postimg.cc/T3QRdC5F/IMG-0157.jpg" alt="Image Description" style="max-width: 50%; height: auto;">
+            </div>
+				    	<div class="news-description">
+<p> TrollRecorder <br>
+Cập nhật tính năng ghi âm cuộc gọi ngay bây giờ v1.15.0 Các cải tiến và cải tiến <br>  
+• Đã thêm nút “Bật lại các tùy chọn được đề xuất” mới vào cửa sổ bật lên phát hiện “Tìm thấy sự không nhất quán” trong cài đặt dành riêng cho ứng dụng. <br>  
+• Đã xóa hoạt ảnh khi vào trang Phiên âm lần đầu tiên. <br>  
+• Trên trang chi tiết ghi âm cuộc gọi trong khi gọi điện thoại hoặc gọi FaceTime, việc nhấn đúp vào số sẽ bắt đầu quay số lại. <br>  
+Sửa lỗi <br>  
+• Cải thiện trải nghiệm người dùng của ứng dụng trong thời gian quá trình Đăng ký. <br>  
+◦ Cập nhật danh sách đăng ký khi bạn bắt đầu hoặc kết thúc quá trình ghi. <br>  
+◦ Loại bỏ sự xuất hiện của hai đăng ký không hợp lệ. <br>  
+• Cải thiện việc xử lý các đăng ký ở trạng thái chuyển đã đóng hoặc đang chờ xử lý. <br>  
+◦ Nhấp chuột sau sẽ không kích hoạt. Hiện nó đang gặp sự cố. <br>  
+◦ Thông tin vị trí địa lý không còn được tự động điền vào nữa. <br>  
+◦ Nó không còn hiển thị các nút “Yêu thích” hoặc “Chia sẻ” nữa. <br>  
+• Đã khắc phục sự cố trong đó các bản ghi có cùng tên sẽ không bị xóa nhiều lần. <br>  
+• Đã khắc phục sự cố trong đó các bản ghi có cùng tên không bị xóa khi tùy chọn “Sử dụng Thùng rác” được bật. <br>  
+• Đã khắc phục sự cố trong đó thông tin cuộc gọi từ bản ghi trước đó có thể được sử dụng trước khi bắt đầu bản ghi tiếp theo. <br>  
+• Đã sửa lỗi thứ tự hiển thị Không được chỉ định cho các bản ghi có cùng tên trong các trường hợp khác nhau. <br>  
+• Đã khắc phục sự cố trong đó phạm vi ngày trong khi xóa các bản ghi gần đây không đáp ứng mong đợi . <br>  
+• Đã khắc phục sự cố trong đó bộ đệm ghi vô tình bị xóa khi quá trình nén ghi không thành công. <br>  
+        </div>
+			 <div class="news-image">
+                <img src="https://i.postimg.cc/ZKF72Q1k/IMG-0156.jpg" alt="Image Description" style="max-width: 50%; height: auto;">
+            </div>
+				<div class="news-description">
+				<p>  ✔️ Dopamine RootHide Jailbreak <br> 
+
+Phiên bản mới nhất 2.1.17.11 <br> 
+
+Điểm khác biệt là nó dễ dàng bỏ qua việc phát 
+hiện jailbreak bằng công cụ RootHide Manager <br> 
+
+Nhược điểm: Cài đặt công cụ cần phải chuyển đổi thông qua công cụ RootHide Patcher <br> 
+Ngoài ra một số công cụ không tương thích <br> 
+
+Các phiên bản được hỗ trợ và iPhone trong hình <br>  
+        </div>
+				 <div class="news-image">
+                <img src="https://i.postimg.cc/NMfPkkNh/IMG-0154.jpg" alt="Image Description" style="max-width: 50%; height: auto;">
+            </div>
+        <div class="news-description">
+            <p>Trang web này chia sẻ các ứng dụng IPA đã được bẻ khóa và các app jailbreak khác. Chúng tôi cung cấp các liên kết tải xuống và hướng dẫn chi tiết để giúp bạn cài đặt các ứng dụng này trên thiết bị của mình.</p>
+            <div class="news-description">
+                <p>Youtube uYou+ | V19.20.2<br>
+                - Khắc phục sự cố iSponsorBlock<br>
+                Các tính năng chính:<br>
+                Tải xuống video dài và ngắn<br>
+                Chặn quảng cáo<br>
+                Hình ảnh trong hình ảnh (PIP)<br>
+                Sửa đổi mở rộng về giao diện<br>
+                Và nhiều cái khác<br>
+                </p>
+            </div>
+            <div class="news-image">
+                <img src="https://i.postimg.cc/Y0Y2SJqZ/BFBAA429-FE95-4E61-ACED-4557192B4329.jpg" alt="Image Description" style="max-width: 50%; height: auto;">
+            </div>
+            <div class="news-description">
+                <p>Một bản cập nhật ứng dụng đã được phát hành Hackt1vator<br>
+                Đặc biệt bỏ qua trang iCloud, bỏ qua iOS 12 trở lên iOS17 trên thiết bị<br>
+                Ứng dụng này miễn phí và cho phép bạn bỏ qua và hủy cập nhật<br>
+                Hỗ trợ cho macOS 1.4.1<br>
+                Hỗ trợ iOS17<br>
+                Bỏ qua iCloud không được kết nối<br>
+                Bỏ qua MDM cho tất cả các thiết bị<br>
+                Lưu và khôi phục tệp kích hoạt iOS<br>
+                Tải xuống: Dành cho Windows và Mac qua link<br>
+                <a href="https://hackt1vator.com" target="_self">hackt1vator</a>
+                </p>
+            </div>
+            <div class="news-image">
+                <img src="https://i.postimg.cc/y8XW79GP/A5-A69-ECA-661-E-4744-B286-2-DC2-CE11-AEC3.jpg" alt="Image Description" style="max-width: 50%; height: auto;">
+          </div>
+          </div>
+        <p>Code Tạo Menu Bản Quền👇</p>
+          <a href="https://docs.google.com/document/d/1-DQQNFdpK3s44zFmB5QhZz7lZd9l1rehufKK3ouNVyw/edit" target="_self"><span style="color: MediumPurple;">Menu Copyright belong to Quốc Chiến</span></a>
+          
+          <h3>Có Thắc Mắc Hoặc Gặp Vấn Đề Vui Lòng Liên Hệ ☎️👇</h3>
+    
+      <div class="contact-links">
+    <a href="zalo.me/84385531007" style="color: DarkOrchid;">Zalo</a>,
+    <a href="https://www.facebook.com/Rukokkuchien?mibextid=LQQJ4d" style="color: green;">Facebook</a>
+
+        </div>
+        <p>Email: chienq895@gmail.com</p>
+      </div>
+      </div>
+			<div id="news" class="content">
+    <h1>Tin Tức</h1>
+		<!-- Mục ảnh -->
+        <div class="news-image">
+            <img src="https://i.postimg.cc/KcJSgR83/AppIcon.png" alt="Mô tả về hình ảnh" style="max-width: 200px;">
+        </div>      
+        <!-- Mục mô tả -->
+        <div class="news-description">
+<p> Hiện đã xuất hiện một ứng dụng mới hỗ trợ Troll Store. <br>
+Bây giờ bạn có thể thay đổi định dạng tệp mà không cần chạm vào ứng dụng tệp bên dưới.<br>
+        </div>
+						 <!-- Mục ảnh -->
+        <div class="news-image">
+            <img src="https://i.postimg.cc/02RmD2Xx/IMG-0158.jpg" alt="Mô tả về hình ảnh" style="max-width: 200px;">
+        </div>
+        <!-- Mục mô tả -->
+        <div class="news-description">
+<p> Chúng tôi đã mang đến cho bạn bản cập nhật cho ứng dụng Duplicator 2.0 để dễ dàng sao chép các tệp ứng dụng trên TrollStore <br>
+• Thay đổi: <br>
+- Thêm tùy chọn thay đổi biểu tượng ứng dụng <br>
+- Cải thiện giao diện mã xử lý nén <br>
+- Thiết kế lại ứng dụng Để sử dụng dễ dàng hơn <br>
+- Thêm bản ghi để theo dõi <br>
+- Xây dựng lại mã để chuẩn bị cho các tính năng trong tương lai <br>
+
+Hỗ trợ phiên bản 14 trở lên <br>
+        </div>
+		<!-- Mục ảnh -->
+        <div class="news-image">
+            <img src=" https://i.postimg.cc/T3QRdC5F/IMG-0157.jpg" alt="Mô tả về hình ảnh" style="max-width: 300px;">
+        </div>
+        
+        <!-- Mục mô tả --> 
+         <div class="news-description">
+ <p> Tải ảnh, câu chuyện và video xuống tất cả các mạng với chất lượng cao và không có logo <br>  
+Cách sử dụng Sao chép video clip, câu chuyện, ảnh hoặc phiên bản ngắn, sau đó dán vào bất kỳ trang web nào trong số này rồi tải xuống <br>  
+<a href="  https://fdownloader.net/en  " target="_self"> Tải ảnh, câu chuyện và video trên Facebook 📘📘👇 </a> <br>  
+
+<a href="  https://ssyoutube.com  " target="_self"> Tải ảnh, video, câu chuyện và âm thanh từ YouTube 🎬🎬👇</a> <br>  
+                <a href="  https://t.me/downloader_tiktok_bot  " target="_self"> Tải xuống video và âm thanh Tik Tok không có logo🖤🖤👇</a> <br>  
+                <a href="   https://snapinsta.app/  " target="_self"> Tải xuống ảnh, câu chuyện và video trên Instagram video không có logo 📷📷👇</a> <br>  
+ <a href=" https://t.me/kurdishpdff/2 " target="_self"> Tải xuống âm thanh Facebook Messenger 👇 </a> </p>
+</div>
+<!-- Mục ảnh -->
+        <div class="news-image">
+            <img src="https://i.postimg.cc/ZKF72Q1k/IMG-0156.jpg" alt="Mô tả về hình ảnh" style="max-width: 200px;">
+        </div>
+        <!-- Mục mô tả -->
+        <div class="news-description">
+<p> TrollRecorder <br>
+Cập nhật tính năng ghi âm cuộc gọi ngay bây giờ v1.15.0 Các cải tiến và cải tiến <br>  
+• Đã thêm nút “Bật lại các tùy chọn được đề xuất” mới vào cửa sổ bật lên phát hiện “Tìm thấy sự không nhất quán” trong cài đặt dành riêng cho ứng dụng. <br>  
+• Đã xóa hoạt ảnh khi vào trang Phiên âm lần đầu tiên. <br>  
+• Trên trang chi tiết ghi âm cuộc gọi trong khi gọi điện thoại hoặc gọi FaceTime, việc nhấn đúp vào số sẽ bắt đầu quay số lại. <br>  
+Sửa lỗi <br>  
+• Cải thiện trải nghiệm người dùng của ứng dụng trong thời gian quá trình Đăng ký. <br>  
+◦ Cập nhật danh sách đăng ký khi bạn bắt đầu hoặc kết thúc quá trình ghi. <br>  
+◦ Loại bỏ sự xuất hiện của hai đăng ký không hợp lệ. <br>  
+• Cải thiện việc xử lý các đăng ký ở trạng thái chuyển đã đóng hoặc đang chờ xử lý. <br>  
+◦ Nhấp chuột sau sẽ không kích hoạt. Hiện nó đang gặp sự cố. <br>  
+◦ Thông tin vị trí địa lý không còn được tự động điền vào nữa. <br>  
+◦ Nó không còn hiển thị các nút “Yêu thích” hoặc “Chia sẻ” nữa. <br>  
+• Đã khắc phục sự cố trong đó các bản ghi có cùng tên sẽ không bị xóa nhiều lần. <br>  
+• Đã khắc phục sự cố trong đó các bản ghi có cùng tên không bị xóa khi tùy chọn “Sử dụng Thùng rác” được bật. <br>  
+• Đã khắc phục sự cố trong đó thông tin cuộc gọi từ bản ghi trước đó có thể được sử dụng trước khi bắt đầu bản ghi tiếp theo. <br>  
+• Đã sửa lỗi thứ tự hiển thị Không được chỉ định cho các bản ghi có cùng tên trong các trường hợp khác nhau. <br>  
+• Đã khắc phục sự cố trong đó phạm vi ngày trong khi xóa các bản ghi gần đây không đáp ứng mong đợi . <br>  
+• Đã khắc phục sự cố trong đó bộ đệm ghi vô tình bị xóa khi quá trình nén ghi không thành công. <br>  
+        </div>
+
+   	          	       <!-- Mục ảnh -->
+        <div class="news-image">
+            <img src="https://i.postimg.cc/NMfPkkNh/IMG-0154.jpg" alt="Mô tả về hình ảnh" style="max-width: 200px;">
+        </div>
+        
+        <!-- Mục mô tả --> 
+         <div class="news-description">
+					<p>  ✔️ Dopamine RootHide Jailbreak <br> 
+
+Phiên bản mới nhất 2.1.17.11 <br> 
+
+Điểm khác biệt là nó dễ dàng bỏ qua việc phát 
+hiện jailbreak bằng công cụ RootHide Manager <br> 
+
+Nhược điểm: Cài đặt công cụ cần phải chuyển đổi thông qua công cụ RootHide Patcher <br> 
+Ngoài ra một số công cụ không tương thích <br> 
+
+Các phiên bản được hỗ trợ và iPhone trong hình <br>  
+       </div>
+                 <!-- Mục ảnh -->
+        <div class="news-image">
+            <img src="https://i.postimg.cc/Y0Y2SJqZ/BFBAA429-FE95-4E61-ACED-4557192B4329.jpg" alt="Mô tả về hình ảnh" style="max-width: 200px;">
+        </div>
+        
+        <!-- Mục mô tả --> 
+         <div class="news-description">
+                
+<p>  Youtube uYou+ | V19.20.2 <br>
+
+ Khắc phục sự cố iSponsorBlock <br>
+Các tính năng chính: <br>
+Tải xuống video dài và ngắn  <br>
+Chặn quảng cáo  <br>
+hình ảnh trong hình ảnh (pip)  <br>
+Sửa đổi mở rộng về giao diện  <br>
+Và nhiều cái khác  <br>
+
+- Khắc phục sự cố iSponsorBlock <br>
+Những đặc điểm chính: <br>
+Video/phim ngắn D/L <br>
+Chặn quảng cáo  <br>
+PIP <br>
+Tùy chỉnh ứng dụng <br>
++++ và rất nhiều tính năng khác <br>
+
+</div>
+        <!-- Mục ảnh -->
+        <div class="news-image">
+            <img src="https://i.postimg.cc/BQnrg9Bc/9-E8-A2-F7-F-00-C7-465-F-A03-B-22-C2535853-D7.jpg" alt="Mô tả về hình ảnh" style="max-width: 200px;">
+        </div>
+        
+        <!-- Mục mô tả -->
+        <div class="news-description">
+            <p>Phở Bò Sói Xám Phiên bản 465.0.1<br>
+                🦋 Tính Năng Hack 🦋<br>
+                Tắt đánh dấu tin nhắn<br>
+                Tắt trạng thái gõ<br>
+                Vô hiệu hóa câu chuyện đánh dấu<br>
+                Tắt tính năng Tự động nâng cao<br>
+                Xác nhận thích<br>
+                Chế độ xác thực<br>
+                Nhiều hơn nữa…<br>
+                Đi tới Cài đặt Nhấp vào Wolf 🐺 để bật Tính năng
+            </p>
+        </div>
+				 <!-- Mục ảnh -->
+        <div class="news-image">
+            <img src="https://i.postimg.cc/htQDJ1dB/B3-D7-DD5-C-3-F6-D-4-D42-9261-B5-DF9-C42-B3-F7.jpg" alt="Mô tả về hình ảnh" style="max-width: 200px;">
+        </div>
+        
+        <!-- Mục mô tả -->
+        <div class="news-description">
+            <p>Tính Năng của phiên bản TikTok 34.5.1<br>
+                Thay đổi địa điểm<br>
+                Tải xuống phương tiện<br>
+                1 triệu người theo dõi (giả mạo)<br>
+                Loại bỏ các quảng cáo<br>
+                Đã xác minh (Giả mạo), Bật HD<br>
+                Bỏ qua trực tiếp<br>
+                Xác nhận thích/theo dõi<br>
+                Nhiều hơn nữa…<br>
+                Đi tới Cài đặt Nhấp vào DarkTik để bật Tính năng
+            </p>
+        </div>
+</div>
+
+<div id="contact" class="content">
+    <h1>Thông tin liên hệ</h1>
+    <p>Thông tin</p>
+         <div class="contact-links">
+    <a href="zalo.me/84385531007" style="color: DarkOrchid;">Zalo</a>,
+    <a href="https://www.facebook.com/Rukokkuchien?mibextid=LQQJ4d" style="color: green;">Facebook</a>
+        </div>
+        <p>Email: chienq895@gmail.com</p>
+    </div>	
+
+<div id="about" class="content">
+    <h1>About</h1>
+    <p>Thông tin về chúng tôi.</p>
+		  <p>Bản quyền © Thuộc Về Quốc Chiến Trang Chia Sẻ IPA Game App Crack Demo</p>
+</div>
+
+<div id="app-jailbreak" class="content">
+    <h1>Jailbreak</h1>
+    <div class="search-container">
+        <input type="text" id="searchJailbreak" class="search-input" onkeyup="searchApps('searchJailbreak', 'jailbreakList')" placeholder="Tìm kiếm ứng dụng Jailbreak...">
+    </div>
+    <ul id="jailbreakList">
+            <li>
+                <img src="https://i.postimg.cc/qBS69fb0/94-B1158-F-FE20-46-DD-B169-79-F0-EAA4-D73-B.jpg" alt="Ảnh IPA App 1">
+                <a href="https://drive.google.com/file/d/1GH_yAFX67D8Nf5QKPNUyOJYqmFOV7xII/view?usp=drivesdk">Cydia Deb</a>
+            </li>
+        <li>
+            <img src="https://i.postimg.cc/9MgBBw2V/979-AA346-D467-4372-ADBE-B570-F2180-F3-B.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/oppm4r3xflde5pt/SaiGon15_1.9.b9.ipa/file">Sài Gòn JB Beta 9 (IOS 15 - 15.8.2 )</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/9MgBBw2V/979-AA346-D467-4372-ADBE-B570-F2180-F3-B.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1o4QXyzZo0UUI1c0CpEK4S2HNRFjAma-7/view?usp=drivesdk">Sài Gòn JB Beta 8 (IOS 15 - 15.8.2 )</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/T2LZJSpB/8-B4-C195-A-3-BCA-42-CF-B550-7-AC96-C69176-A.jpg" alt="Ảnh IPA App 2">
+            <a href="https://xina.cypwn.xyz/">Xinam1ne Jb 15 - 16.6.1</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/vH5kpV7z/A1153-B8-F-F663-4152-A3-C5-173-F73808358.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/1ksz0synvzarmo1/nekojb_beta_5.zip/file">Neko Jb 15-15.8.2</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/SsqfYnYy/FA43-D2-D1-C0-C7-4-AFC-A9-E0-5898-D0029-EE8.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/1id9cm5ktbc49gy/nekojb_rootful.tipa/file">NekoJB ( JB Rootfull ) IOS 15-15.8.2</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/SsqfYnYy/FA43-D2-D1-C0-C7-4-AFC-A9-E0-5898-D0029-EE8.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1OtDt4UA_uHiDaVWvFWrwpNH8QR3Wo_U2/view?usp=drivesdk">nekoloader ( cài kèm NekoJB Rootfull )</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/pT6yb7Hg/EEFDC4-F4-1-C1-F-48-B3-B7-F4-E0-FF70-A5-B1-E3.jpg" alt="Ảnh IPA App 2">
+            <a href="https://ellekit.space/dopamine/">Dopamine</a>
+        </li>
+					<li>
+            <img src="https://i.postimg.cc/NMfPkkNh/IMG-0154.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/js0deyrk3nd2xnh/roothide-Dopamine2-v11.zip/file">roothide-Dopamine2-v11</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/2yLyzwj3/76624-F51-734-C-4536-BA83-E5592-A2-AF06-E.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/0k31acafvq9df6t/Dopamine_blacklist.tipa/file">Dopamine Blacklist</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/nLVvn6yz/1981-FFCD-45-C8-43-AF-BDDF-ECB30906162-A.jpg" alt="Ảnh IPA App 2">
+            <a href="https://github.com/roothide/Bootstrap/releases/tag/1.2.1">Bootstrap JB</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/pLHf69kK/ED6-FA8-DD-525-B-44-FC-8-E5-C-9-DA5-EABED23-C.png" alt="Ảnh IPA App 2">
+            <a href="https://github.com/mineek/Serotonin/releases/tag/1.2.1">Serotonin Cài Cùng Bootstrap</a>
+        </li>
+        <!-- Thêm các mục IPA ở đây -->
+    </ul>
+</div>
+
+<div id="trollstore" class="content">
+    <h1>TrollStore</h1>
+    <div class="search-container">
+        <input type="text" id="searchTrollStore" class="search-input" onkeyup="searchApps('searchTrollStore', 'trollstoreList')" placeholder="Tìm kiếm ứng dụng TrollStore...">
+    </div>
+    <ul id="trollstoreList">
+        <li>
+            <img src="https://i.postimg.cc/B6B92PhN/43-B426-A4-1-A8-D-411-B-95-C0-07-F599-AE68-C4.jpg" alt="Ảnh IPA App 2">
+            <a href="https://dhinakg.github.io/files/apps/TrollInstallerMDC/TrollInstallerMDC.ipa">TrolllnstallerMDC ( Hỗ Trợ IOS 15-15.7.1/16.0-16.1.2 )</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/15thNtDc/612-CCE71-B552-4-F9-F-A2-FC-459-CC82-AB2-BF.jpg" alt="Ảnh IPA App 2">
+            <a href="https://github.com/straight-tamago/TrollMisaka/releases/">TrollMisaka</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/3Ntsc5Qv/762-DB878-E429-4-CAD-A70-A-E6930-F49-AA7-B.jpg" alt="Ảnh IPA App 2">
+            <a href="https://github.com/34306/TrollStar/releases/tag/1.2">TrollStar</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/Gh4CBtCw/0-C751928-D9-E9-4-BB6-8436-AFF69-D8-EC3-B3.jpg" alt="Ảnh IPA App 2">
+            <a href="https://github.com/alfiecg24/TrollInstallerX/releases">TrollInstallerX</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/9Fsjy2m4/473-FD41-C-9734-4614-AA4-C-0-B63594-E5662.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/12S3ORNvHTVNuglaN4i5cX0r7-IOzsQVC/view?usp=drivesdk">eSign++</a>
+        </li>
+         <li>
+            <img src="https://i.postimg.cc/GtVj8Ky6/3333-AAA3-8-C5-B-49-FC-B835-C1-EEB64-FF987.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/rprekvwifip2nw9/Apps_Manager.ipa/file">Apps Manager</a>
+          </li>
+					   <li>
+            <img src="https://i.postimg.cc/ZKF72Q1k/IMG-0156.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/wkogcacwdzgdueo/TRApp_1.15.0-331.tipa/file"> TrollRecorder</a>
+        </li>
+				 <li>
+            <img src="https://i.postimg.cc/KcJSgR83/AppIcon.png" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/xm0nrv6qmcjfnus/ipapk.ipa/file">IPA And APK</a>
+        </li>
+				  <li>
+            <img src="https://i.postimg.cc/02RmD2Xx/IMG-0158.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/z5ip89klbycepii/Duplicator_2.0.ipa/file">Duplicator</a>
+        </li>
+         <li>
+            <img src="https://i.postimg.cc/13sFKk5H/29-FC2002-5-DEC-4-DF2-995-D-4-F3740-E9-E614.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/bscn0k1rn58pqhm/H5GG_PiP_7.9%25E5%25B7%25A8%25E9%25AD%25942%2540%25E5%25B7%25A8%25E9%25AD%2594%25E5%2595%2586%25E5%25BA%2597.tipa/file">H5GG</a>
+          </li>
+               <li>
+            <img src="https://i.postimg.cc/gcSpkR1H/06-DE2-B81-04-BB-45-D9-8497-B148-A4068-CF2.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1hF7zx6SakuJiTNILmd0hzdh9M5-HL3Ja/view?usp=drivesdk">Troll Leds ( Chụp Ảnh Khi Bật Đèn )</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/rsP2nX5P/C462-D298-208-A-43-FF-8-CB3-7-D11016-F57-E3.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1hCerI0fDJjR0CIS26Ba-nh6AMKIFYQ14/view?usp=drivesdk">ResprignGG ( Tự Resprign Khi Bạn Bấm Vô Nó )</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/QdJCmm6Z/6684-EB57-B5-BC-427-F-9-A2-F-7-E772299-CF45.jpg" alt="Ảnh IPA App 2">
+            <a href="https://github.com/powenn/ModMyIPA">ModMyIpa</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/0NtQRQRt/5-DF13585-07-CC-40-B7-950-E-8524-CD958-B90.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/5qbduvqwfbdohyl/Filza_IOS_14-16.5.zip/file">Filza ( IOS 14- 16.5 )</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/QMNty7P9/4-ED9790-F-3-B04-43-CF-ADC4-B55704804-C4-C.jpg" alt="Ảnh IPA App 2">
+            <a href="https://github.com/CokePokes/AppStorePlus-TrollStore/releases/tag/v1.2-1">AppStore++</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/Bn0t2kBC/CDDA1-A0-E-EBA6-4-FA5-8882-DD768-FC77067.png" alt="Ảnh IPA App 2">
+            <a href="https://github.com/leminlimez/Helium/releases">Helium</a>
+        </li>
+               <li>
+            <img src="https://i.postimg.cc/QNKMwh6b/91-A75-E9-A-835-B-4-F2-E-9430-98-C7-EDD735-CD.jpg" alt="Ảnh IPA App 2">
+            <a href="https://github.com/haxi0/KillMyOTA/releases">KillMyOTA Chặn Cập Nhật Từ IOS 15-16.2</a>
+        </li>
+        <!-- Thêm các mục IPA ở đây -->
+    </ul>
+</div>
+
+<div id="game-hack" class="content">
+    <h1>Game Hack</h1>
+    <div class="search-container">
+        <input type="text" id="searchGameHack" class="search-input" onkeyup="searchApps('searchGameHack', 'gameHackList')" placeholder="Tìm kiếm Game Hack...">
+    </div>
+    <ul id="gameHackList">
+           <h3>Video Hướng DẫnHack 8 Ball Pool Đường Kẻ Dài IOS ( 8 Ball Pool Hack By Quốc Chiến )</h3>
+        <ul>
+            <li>     
+    <iframe src="https://www.youtube.com/embed/90No0CbJr_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</body>
+        <li>
+            <img src="https://i.postimg.cc/C51VsLn8/1277-F749-127-B-4-C91-8799-37-FC2-FA391-A6.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1_ArZvsH3vsllZe4SHC8hofPJ8l2NkHcJ/view?usp=drivesdk">Hack 8 Ball Pool By Quốc Chiến</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/KzQ2TgjF/A076-C506-A1-BE-49-B4-9-DF6-DD685-D5-B5-EF1.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1lYg2whaBgUdubP93nyawt6JbBWq4TfQV/view?usp=drivesdk">INSIDE PlayDead IPA Full Install IOS [IPA]</a>
+        </li>   
+        <li>
+            <img src="https://i.postimg.cc/pTPvyB2q/B46-B907-C-E7-CA-45-D2-B4-D8-F405-C9-B04-E6-E.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1UgCFj88XlyGziuSPjmbnHzrLh-NNjmvg/view?usp=drivesdk">Botworld Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/yNmBVGzD/BDD967-DC-3706-4-EB5-8-F29-7435-B3-EB9-D66.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1vov4HKihGAY6_wBLkJN0Tr2pE0fQAe5T/view?usp=drivesdk">1945 Ari Force</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/bvcpfh4X/51102-D7-C-C44-B-4884-9-AB6-92-DFA9-A94949.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1eRL2SKZn_br-8ze5p_BkDryLNcSAy4H8/view?usp=drivesdk">Hero Wars Hack </a>
+        </li>
+               <li>
+            <img src="https://i.postimg.cc/XYy4PJHc/BD65-ABB8-B541-456-F-A98-D-0-BA026-E8-D363.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1wRiaxnrC3iyoLJ2OEai0WOEP5FzZrA2s/view?usp=drivesdk">Dice Dreams Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/8Pc1hwLY/BCF9-EE42-7-F0-D-4646-9-C4-B-8-BF63-CA10-C79.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1wRiaxnrC3iyoLJ2OEai0WOEP5FzZrA2s/view?usp=drivesdk">Dead Trigger Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/MKLztRDp/46-F0-F9-A5-327-B-4-CBB-A3-FD-C4-F21-CD39-A63.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1YFcuMSpTOxacItK18PEURgjzDCn_VDGp/view?usp=drivesdk">Survivor.io Hack </a>
+        </li>
+
+        <li>
+            <img src="https://i.postimg.cc/8cPTXm9j/D4-F12-C51-1383-47-F7-80-F5-615482307-A91.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1GdOUJa_MGNJhOyb6AXdXLtFw9JiLfDa7/view?usp=drivesdk">Zooba Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/DfBvJR4s/902736-E7-FAE7-45-DD-82-EE-9230162-ECA57.png" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1Mbtyo-SMM0MtpZcSFOEr0ICWb4m3iwmx/view?usp=drivesdk">Grand Theft Auto III Crack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/Kjqx6ghQ/3-DF3-F5-F5-7-BED-4-ACE-AAC4-6-AC478-C06791.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1L-cT-REiTod83cHhzCv6UWS2Hu_yrNfi/view?usp=drivesdk">Brotato:Premium</a>
+        </li>
+               <li>
+            <img src="https://i.postimg.cc/4dGfVg1v/C67-E09-A0-D8-E5-4-AE8-AA6-D-34-ED758-DB361.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/184cG_n1FYuITJP55EckwAtPAiXJNiEok/view?usp=drivesdk">Lamar - Idle Vlogger Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/1zwR8tD5/25-DF987-C-4-BA6-4-D3-F-8482-281-AB8940-C5-F.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1w8UhXwWvzRVDdq8BkY9Ztj19DltyJDoF/view?usp=drivesdk">Age of Magic Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/pLgXV8h6/CDDA1-BBE-5-DAB-4-E24-AFA7-D8043-FB20-DF5.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/18lbZtfv-ucE9HYNfK9aSAAm6vI1sEH_U/view?usp=drivesdk">DB LEGENDS Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/Z595hjRN/168383-F8-4-B37-43-EA-A68-D-08-A793-DCF2-BA.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1Hv0nuoOop5Du6FHNIiVIB-6iyXFr7AoK/view?usp=drivesdk">PGA TOUR Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/qBLRczSN/27-D9-A633-E1-FE-474-A-8964-9-B04-EE6-FEEBB.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1lmWLme3pS55SJYREqBC5pxuCF18XV539/view?usp=drivesdk">Subway Surf Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/GhgmN6cr/2036164-E-5674-4852-9368-4-FF407-C6-D494.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1hFfWb4ZlIVrN3HqAJ47j-rMaxHdUoH0B/view?usp=drivesdk">RAID: Shadow Legends Hack</a>
+        </li>
+               <li>
+            <img src="https://i.postimg.cc/VLkNKzPD/D70-AB184-5-F3-D-40-CA-9-E0-D-55-C51-BA060-B3.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1K63GZEYYnluoFRCxw2WsLqE45T6DQ1aK/view?usp=drivesdk">Armed Heist Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/3NKw5T4r/B2-A3-A8-FF-DF29-4642-9231-629-AB0-ABE4-D6.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1zdn9guxtfPLJTEWlidHp2BxUedPeE-om/view?usp=drivesdk">Toon Blast Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/yxv87bcm/2-CA808-E1-A032-49-F0-AF98-05-F582-AA5-EF1.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1wufMRlpLdPj1JkTwwxylH_nORx7m_YZ4/view?usp=drivesdk">Truckers of Europe 3 Hack</a>
+        </li>   
+        <li>
+            <img src="https://i.postimg.cc/rmGpPmpY/E72-C7-C30-1-B40-40-F3-B6-BC-A3-B81-B3-D2-E0-D.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1Qsyv2o3h2iGDEhHw4Lu9jmvQIh4aCHBM/view?usp=drivesdk">Last Day On Earth: Surival Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/RFxFdfvH/3-C530-E8-D-D21-D-4-B86-94-D2-5287565-AA8-D1.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1UyohFFsK6MyEtHEALnmfTt2z2jx7WpDC/view?usp=drivesdk">Among Us Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/XvCq9x6W/6-A9756-D2-75-D4-4-F2-A-8786-4682-B10-E389-F.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1wZS16sbaA6xui8B5fQJza2d3PRIWYdKq/view?usp=drivesdk">Shadow Knight Hack</a>
+        </li>
+       <li>
+            <img src="https://i.postimg.cc/4NWYGmQD/1-D53-BF3-F-1-FC6-47-D9-A5-EB-7-CE1-FBDA5333.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1QZpm9rSZXpbnJiAKIF57vds3Uu64Ljin/view?usp=drivesdk">Shadow Fight 3 Hack Tài Nguyên</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/T3hp3fkp/04-A767-B8-5587-46-C2-BC39-CE37-C63-FFEF6.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/12NrFPgCv78hz3EK-An2jqMPC6pAig7oD/view?usp=drivesdk">SimCity Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/fLvwvrHG/4-E313-A04-19-EF-46-CB-A866-5-D9-FF8-EBBB86.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1-E7gESJ5aadAwYJhXQRESfa1eZnIDesy/view?usp=drivesdk">Minecraft</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/t4f71wfD/1-F678-E32-BFB4-4710-9-F23-510868-BDBB13.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1TziAT7rBETENHx_zBTkWDto1nzgfNbgw/view?usp=drivesdk">Tiny Fantasy Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/SNSnHWCL/539-E7614-1-D05-40-D3-A756-AE57-C449442-A.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1sRvmT8EHfBPsy_frUm7mK4e5H6YKBT7N/view?usp=drivesdk">BRIM Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/ydkNVH77/92982-DC7-F8-C2-4-E9-C-A71-C-17189-CC82-AE9.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1RW6xSTIcF5Ut6W0dOZzaDpwEXAHUDeMC/view?usp=drivesdk">Neverending Nightmares</a>
+        </li>   
+        <!-- Thêm các mục IPA ở đây -->
+    </ul>
+</div>
+
+<div id="app-crack" class="content">
+    <h1>App Crack</h1>
+    <div class="search-container">
+        <input type="text" id="searchAppCrack" class="search-input" onkeyup="searchApps('searchAppCrack', 'appCrackList')" placeholder="Tìm kiếm App Crack...">
+    </div>
+    <ul id="appCrackList">
+                <li>
+            <img src="https://i.postimg.cc/htQDJ1dB/B3-D7-DD5-C-3-F6-D-4-D42-9261-B5-DF9-C42-B3-F7.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1cw2QN9iV0Lk-O5e5mi6dxKDwBxS1Yxly/view?usp=drivesdk">TikTok Carck Copyright belong to Quốc Chiến</a>
+					</li>  
+              <li>
+            <img src="https://i.postimg.cc/hj7cCHxv/D332-CE4-B-4-FAB-41-F0-A24-F-108-F930-BD9-FA.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1EMbCKJZDa7ICEaoEj6jkm17JKC3MO0Ya/view?usp=drivesdk">Facebook Wolf 🐺 Copyright belong to Quốc Chiến</a>
+        </li>
+              <li>
+            <img src="https://i.postimg.cc/hj7cCHxv/D332-CE4-B-4-FAB-41-F0-A24-F-108-F930-BD9-FA.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1mKyNXX-MlxVpqqhJiAb5F2wXDaseZvVT/view?usp=drivesdk">Facebook Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/B6P94kqF/B51968-B6-32-E5-4929-9-E7-D-D5-B47-F10785-E.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/ayk51lv4uky9846/Facebook_Lite.ipa/file">Facebook Lite</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/L6F6W6xp/3-CE90039-57-F8-48-B9-8-B0-E-BC4-DEC0-E1-DB8.png" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/176pF_VAhCzowKzX7d2V_iYTdbkLnA4dX/view?usp=drivesdk">Twitter X Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/05wyZJdn/25064-E39-5-B0-F-4-D71-B4-DE-D58-B74-D7-FA22.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1dr4eBLBNR9WYQDR74_dDYcK2gusxNfAb/view?usp=drivesdk">Instagram Hack </a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/63D5t9wC/8F37C47E-15EA-4A1D-8F0E-19A2EF91A586.jpg" alt="Ảnh IPA App 2">
+            <a href="https://t.me/setlanguage/abcxyz">Telegram Việt Hoá</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/Y0Y2SJqZ/BFBAA429-FE95-4E61-ACED-4557192B4329.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/4l04r94v7zdab9z/YouTube_18.49.3_1711077845.ipa/file">YouTube Pro</a>
+        </li>
+               <li>
+            <img src="https://i.postimg.cc/Y0Y2SJqZ/BFBAA429-FE95-4E61-ACED-4557192B4329.jpg" alt="Ảnh IPA App 2">
+            <a href="https://docs.google.com/document/d/10m8hIVdMzBY5Ye-Cb-eee0VlMrqOJE6Zmy-jEidnupE/edit">Chặn quảng cáo YouTube bằng shadowrocket</a>
+        </li>
+       <li>
+            <img src="https://i.postimg.cc/pyMN1rv1/382-A54-E2-22-A0-41-CE-9633-B1-F19264-FAFF.png" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/190bHQ6mpNtfpvGjNM-7-YqHNXhG5f617/view?usp=drivesdk">YouTube Music Hack</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/qMLYV48Y/4-A8583-FB-0106-474-D-BBCA-72-B8-EFC7-D7-B4.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/9hxssbyc7bv38qb/Turbo_Tube-1.1.0.ipa/file">Turbo Tube</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/nLrHmshv/9E51FEC2-BE00-4738-90B4-A2713099E2C5.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/75k1vok610f15xt/Zalo_1.ipa/file">Zalo Clon 1</a>
+        </li>
+               <li>
+            <img src="https://i.postimg.cc/nLrHmshv/9E51FEC2-BE00-4738-90B4-A2713099E2C5.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/17CJmWRHoMeNWuMQd8vteFZ4Oy9Gj5k8_/view?usp=drivesdk">Zalo Clon 2</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/QMdMq40K/C5B924D7-6143-4AF3-8C2B-81E57BFA7ACE.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/ml3vzbl0ms96ddi/AdGuard.Pro.ipa/file">AdGuard Pro</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/V6SLxSyY/78555E8A-7E9A-4682-8040-198850BF2B83.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1A1KbxsFe0Vt3lKXISqBWYF6W7_4PFnZq/view?usp=drivesdk">Alight Motion Pro</a>
+        </li>   
+        <li>
+            <img src="https://i.postimg.cc/VNZkZqVG/0F4B93D8-FC1B-4FA2-B982-46E7B24DC167.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1yZGv6aN-IAMUB2KiV8_pE0BHH6Wkr5S4/view?usp=drivesdk">InShot Pro</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/wjVvL8cd/A4F6A7DE-A10E-4BBB-8234-49BDF0A6FFB1.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/m9h01z0q8ybq5p2/Bilibili.ipa/file">Bilibili Pro</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/fRZyVTdK/FC2F844C-C56B-4351-A07E-48BE99344537.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/ta0sa0nrojt9qgq/DU.Recorder.ipa/file">DU Recorder Pro</a>
+        </li>
+               <li>
+            <img src="https://i.postimg.cc/3r4d6q7g/7FBB000B-E220-4303-894D-516B466A60BF.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/tnk3nkt3c2xxsg2/PicsArt_Pro.ipa/file">Picsart Pro</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/CM3zV4L9/DE7D585D-486E-446F-B10C-C2E4C86ECC6E.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/uqq6kk1xc029ptf/EnhanceFox_7.0.0.ipa/file">EnhanceFox Pro</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/VLX5sbJv/AEEF62B1-C592-4354-9BFC-78D29B7AB860.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/xah8qho1hbv1m8a/Voloco.ipa/file">Voloco</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/wT8HTqRj/E2-F5-FE3-E-FA44-45-B7-A5-B3-E50139-E82-A01.png" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/9udvwoudtv2s9t9/RingtoneMaker_Pro.ipa/file">RingtoneMaker No Ads</a>
+        </li>
+               <li>
+            <img src="https://i.postimg.cc/NFqYZp74/D553-DE61-4-C9-F-4-E79-9-F89-0-A055521449-F.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1jvpQy13e-_QBJJDFTeJKvgYgHwA1ayqx/view?usp=drivesdk">NETFLIX</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/VkDf59mf/0-FB0-E8-DB-0-FB1-467-F-8-E1-D-ECEFD18-ECF51.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1-A9QwU_XYkjtJRG63PnCp_vjUguk1six/view?usp=drivesdk">Locket Gold</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/3wq3FKkz/D963E4F3-17EE-4D14-8C42-6B5ADD0B3D87.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/d42nqolz1tsku1t/Shadowrocket.ipa/file">Shadowrocket</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/02G21R4J/48CA434B-63F4-402F-BDA7-E6702E54ED20.jpg" alt="Ảnh IPA App 2">
+            <a href="https://www.mediafire.com/file/slsim2qruc5uves/Quantumult_X.ipa/file">Quantumult</a>
+        </li>
+        <li>
+            <img src="https://i.postimg.cc/g2YcYt9t/0-CD0-D318-05-C7-4-D50-9-A24-CA6336-EB67-DD.jpg" alt="Ảnh IPA App 2">
+            <a href="https://drive.google.com/file/d/1h9e51W4zEulJj8nhjzcJN7p1Xod6jgwd/view?usp=drivesdk">FL Studio</a>
+        </li>
+        <!-- Thêm các mục IPA ở đây -->
+    </ul>
+</div>
+
+<script>
+    function showContent(contentId) {
+        var contents = document.querySelectorAll('.content');
+        contents.forEach(function(content) {
+            content.classList.remove('active');
+        });
+        document.getElementById(contentId).classList.add('active');
+    }
+
+    function searchApps(inputId, listId) {
+        var input = document.getElementById(inputId);
+        var filter = input.value.toLowerCase();
+        var ul = document.getElementById(listId);
+        var li = ul.getElementsByTagName('li');
+
+        for (var i = 0; i < li.length; i++) {
+            var a = li[i].getElementsByTagName('a')[0];
+            var textValue = a.textContent || a.innerText;
+            if (textValue.toLowerCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script>
+</body>
+</html>
+      
+      
